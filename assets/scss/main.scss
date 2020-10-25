@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'vars';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.justify {
+  &-start {
+    justify-content: flex-start;
+  }
+
+  &-end {
+    justify-content: flex-end;
+  }
+
+  &-center {
+    justify-content: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+.align {
+  &-start {
+    align-items: flex-start;
+  }
+
+  &-end {
+    align-items: flex-end;
+  }
+
+  &-center {
+    align-items: center;
+  }
+}
+
+.font-1 {
+  font-family: $primary-font;
+}
+
+.font-2 {
+  font-family: $secondary-font;
+}
+
+@include font-size
+
+.font-weigth {
+  &-normal {
+    font-weight: 500;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+}
+
+.primary-color {
+  color: $primary;
+}
+
+.secondary-color {
+  color: $secondary;
+}
+
+.gray-color {
+  color: $gray;
+}
+
+
+@include spacing('', 'margin', 'm');
+@include spacing('', 'padding', 'p');
+
+.to-upper {
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  min-width: 150px;
+  border: none;
+  outline: none;
+  height: 35px;
+}
+
+.btn-icon {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,97 @@
+{
+  "locales": {
+    "ua": {
+      "products": [
+        {
+          "amount": 5,
+          "id": 1,
+          "description": "Чудове вино, ням-ням",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Назва",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "amount": 5,
+          "description": "Чудове вино, ням-ням 2",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Назва 2",
+          "price": 150
+        },
+        {
+          "id": 3,
+          "amount": 5,
+          "description": "Чудове вино, ням-ням 3",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Назва 3",
+          "price": 150
+        }
+      ]
+    },
+    "ru": {
+      "products": [
+        {
+          "id": 1,
+          "amount": 5,
+          "description": "Отличное вино",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Название",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "amount": 5,
+          "description": "Отличное вино 2",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Название 2",
+          "price": 150
+        },
+        {
+          "id": 3,
+          "amount": 5,
+          "description": "Отличное вино 3",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Название 3",
+          "price": 150
+        }
+      ]
+    },
+    "en": {
+      "products": [
+        {
+          "id": 1,
+          "amount": 5,
+          "description": "Gorgeous Wine, yummy",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Name",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "amount": 5,
+          "description": "Gorgeous Wine, yummy 2",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Name 2",
+          "price": 150
+        },
+        {
+          "id": 3,
+          "amount": 5,
+          "description": "Gorgeous Wine, yummy 3",
+          "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
+          "year": 18,
+          "name": "Name 3",
+          "price": 150
+        }
+      ]
+    }
+  }
+}

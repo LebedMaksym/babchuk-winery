@@ -24,12 +24,40 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,latin-ext',
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+      },
+    ],
   },
   /*
    ** Global CSS
    */
-  css: [],
+  // css: ['@/assets/scss/main.scss'],
+  styleResources: {
+    scss: ['./assets/scss/main.scss'],
+  },
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -47,12 +75,14 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-  ],
+  modules: ['@nuxtjs/axios', 'nuxt-i18n', '@nuxtjs/style-resources'],
+  i18n: {
+    locales: ['en', 'ru', 'ua'],
+    defaultLocale: 'ua',
+    vueI18n: {
+      fallbackLocale: 'ua',
+    },
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -62,5 +92,11 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    babel: {
+      presets() {
+        return [['@nuxt/babel-preset-app', { loose: true }]]
+      },
+    },
+  },
 }

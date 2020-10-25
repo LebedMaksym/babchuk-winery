@@ -1,0 +1,58 @@
+@mixin spacing($breakpoint, $spacing, $spacing-letter) {
+  @for $i from 0 through 12 {
+    $value: 5 * $i + px;
+    .#{$spacing-letter} {
+      &a#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}: $value;
+        }
+      }
+
+      &t#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}-top: $value;
+        }
+      }
+
+      &b#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}-bottom: $value;
+        }
+      }
+
+      &r#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}-right: $value;
+        }
+      }
+
+      &l#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}-left: $value;
+        }
+      }
+
+      &x#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}-left: $value;
+          #{$spacing}-right: $value;
+        }
+      }
+
+      &y#{$breakpoint} {
+        &-#{$i} {
+          #{$spacing}-top: $value;
+          #{$spacing}-bottom: $value;
+        }
+      }
+    }
+  }
+}
+
+@mixin font-size {
+  @for $i from 1 through 40 {
+    .fs-#{$i} {
+      font-size: $i + px;
+    }
+  }
+}
