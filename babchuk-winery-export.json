@@ -9,7 +9,8 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Назва",
-          "price": 150
+          "price": 150,
+          "text": "Lorem Ipsum є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом. Це також називається заповнювач ( або наповнювач) текст. Це зручний інструмент для макетів. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше."
         },
         {
           "id": 2,
@@ -18,7 +19,8 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Назва 2",
-          "price": 150
+          "price": 150,
+          "text": "Lorem Ipsum є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом. Це також називається заповнювач ( або наповнювач) текст. Це зручний інструмент для макетів. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше."
         },
         {
           "id": 3,
@@ -27,9 +29,37 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Назва 3",
-          "price": 150
+          "price": 150,
+          "text": "Lorem Ipsum є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом. Це також називається заповнювач ( або наповнювач) текст. Це зручний інструмент для макетів. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше."
         }
-      ]
+      ],
+      "content": {
+        "nav": [
+          {
+            "name": "Продукція",
+            "path": "products"
+          },
+          {
+            "name": "Про нас",
+            "path": "about"
+          },
+          {
+            "name": "Галерея",
+            "path": "galery"
+          }
+        ],
+        "storyPage": {
+          "title": "Історія",
+          "text": "Lorem Ipsum є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом. Це також називається заповнювач ( або наповнювач) текст. Це зручний інструмент для макетів. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Lorem Ipsum все ще нагадує класичну латину, він насправді не має ніякого значення. Як текст Цицерона не містить літери K."
+        },
+        "aboutUsPage": {
+          "title": "Про нас",
+          "text": "Lorem Ipsum є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом. Це також називається заповнювач ( або наповнювач) текст. Це зручний інструмент для макетів. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Lorem Ipsum все ще нагадує класичну латину, він насправді не має ніякого значення. Як текст Цицерона не містить літери K."
+        },
+        "productsPage": {
+          "title": "Вино"
+        }
+      }
     },
     "ru": {
       "products": [
@@ -40,7 +70,8 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Название",
-          "price": 150
+          "price": 150,
+          "text": "Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский."
         },
         {
           "id": 2,
@@ -49,7 +80,8 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Название 2",
-          "price": 150
+          "price": 150,
+          "text": "Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский."
         },
         {
           "id": 3,
@@ -58,9 +90,37 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Название 3",
-          "price": 150
+          "price": 150,
+          "text": "Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский."
         }
-      ]
+      ],
+      "content": {
+        "nav": [
+          {
+            "name": "Продукция",
+            "path": "products"
+          },
+          {
+            "name": "О нас",
+            "path": "about"
+          },
+          {
+            "name": "Галерея",
+            "path": "galery"
+          }
+        ],
+        "storyPage": {
+          "title": "История",
+          "text": "Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание;"
+        },
+        "aboutUsPage": {
+          "title": "О нас",
+          "text": "Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание;"
+        },
+        "productsPage": {
+          "title": "Вино"
+        }
+      }
     },
     "en": {
       "products": [
@@ -71,7 +131,8 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Name",
-          "price": 150
+          "price": 150,
+          "text": "Lorem ipsum dolor sit amet, omnes minimum disputationi pri te, ea graece euripidis definiebas nam, veri oratio et his. Eum soleat tamquam qualisque no, duo affert tantas petentium te, unum iusto malorum ad vim. Qui iusto virtute ex, ei recusabo quaestio his, an his quot reque delectus. Facete repudiare quo ne, vix tollit dolore iisque in.\n\nSed ut vitae dolore necessitatibus, ex quot omnes discere vis, utinam volumus at pro. Quo ea euismod deterruisset, modo option mediocritatem eos cu, error nostrud feugiat has ea. Per tritani salutandi ut, verterem posidonium ea ius. Saperet abhorreant ei vix. Vim utinam option posidonium at, an eam verterem patrioque mediocritatem."
         },
         {
           "id": 2,
@@ -80,7 +141,8 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Name 2",
-          "price": 150
+          "price": 150,
+          "text": "Lorem ipsum dolor sit amet, omnes minimum disputationi pri te, ea graece euripidis definiebas nam, veri oratio et his. Eum soleat tamquam qualisque no, duo affert tantas petentium te, unum iusto malorum ad vim. Qui iusto virtute ex, ei recusabo quaestio his, an his quot reque delectus. Facete repudiare quo ne, vix tollit dolore iisque in.\n\nSed ut vitae dolore necessitatibus, ex quot omnes discere vis, utinam volumus at pro. Quo ea euismod deterruisset, modo option mediocritatem eos cu, error nostrud feugiat has ea. Per tritani salutandi ut, verterem posidonium ea ius. Saperet abhorreant ei vix. Vim utinam option posidonium at, an eam verterem patrioque mediocritatem."
         },
         {
           "id": 3,
@@ -89,9 +151,37 @@
           "image": "https://firebasestorage.googleapis.com/v0/b/babchuk-winery.appspot.com/o/bottle.png?alt=media",
           "year": 18,
           "name": "Name 3",
-          "price": 150
+          "price": 150,
+          "text": "Lorem ipsum dolor sit amet, omnes minimum disputationi pri te, ea graece euripidis definiebas nam, veri oratio et his. Eum soleat tamquam qualisque no, duo affert tantas petentium te, unum iusto malorum ad vim. Qui iusto virtute ex, ei recusabo quaestio his, an his quot reque delectus. Facete repudiare quo ne, vix tollit dolore iisque in.\n\nSed ut vitae dolore necessitatibus, ex quot omnes discere vis, utinam volumus at pro. Quo ea euismod deterruisset, modo option mediocritatem eos cu, error nostrud feugiat has ea. Per tritani salutandi ut, verterem posidonium ea ius. Saperet abhorreant ei vix. Vim utinam option posidonium at, an eam verterem patrioque mediocritatem."
         }
-      ]
+      ],
+      "content": {
+        "nav": [
+          {
+            "name": "Products",
+            "path": "products"
+          },
+          {
+            "name": "About us",
+            "path": "about"
+          },
+          {
+            "name": "Galery",
+            "path": "galery"
+          }
+        ],
+        "storyPage": {
+          "title": "Story",
+          "text": "Lorem ipsum dolor sit amet, nec ei primis debitis, ut vim stet integre epicurei, an eos malorum tractatos incorrupte. Usu audiam inermis et. Ea duo illud mediocritatem, mei lobortis dissentias ne. Brute verear vis et. Per an iudicabit accusamus temporibus, noluisse necessitatibus conclusionemque cum ei. Qui id utroque pertinax scriptorem, quo id mollis fierent.\n\nSit ea vide autem explicari. Altera intellegebat conclusionemque mea at, fabellas scribentur ius ne, ad viris qualisque usu. Ei eos insolens abhorreant, nam no nullam malorum. Cum dolores tractatos ex, vel complectitur vituperatoribus eu, graeco aperiri eu pri."
+        },
+        "aboutUsPage": {
+          "title": "About us",
+          "text": "Lorem ipsum dolor sit amet, nec ei primis debitis, ut vim stet integre epicurei, an eos malorum tractatos incorrupte. Usu audiam inermis et. Ea duo illud mediocritatem, mei lobortis dissentias ne. Brute verear vis et. Per an iudicabit accusamus temporibus, noluisse necessitatibus conclusionemque cum ei. Qui id utroque pertinax scriptorem, quo id mollis fierent.\n\nSit ea vide autem explicari. Altera intellegebat conclusionemque mea at, fabellas scribentur ius ne, ad viris qualisque usu. Ei eos insolens abhorreant, nam no nullam malorum. Cum dolores tractatos ex, vel complectitur vituperatoribus eu, graeco aperiri eu pri."
+        },
+        "productsPage": {
+          "title": "Wine"
+        }
+      }
     }
   }
 }

@@ -1,7 +1,9 @@
 <template>
   <section class="products">
     <div class="container">
-      <h1 class="fs-28 products__title font-2 mb-8 to-upper">Wine</h1>
+      <h1 class="fs-28 products__title font-2 mb-8 to-upper">
+        {{ content.productsPage.title }}
+      </h1>
       <ul class="products__list list d-flex">
         <li
           v-for="product in products"
@@ -20,14 +22,20 @@
 <script lang="ts">
 import { Component, Vue, namespace } from 'nuxt-property-decorator'
 import ProductCard from '~/components/products/ProductCard.vue'
+import { Product } from '~/models/Product'
+import { Content } from '~/models/Content'
 const products = namespace('products')
+const appState = namespace('appState')
 
 @Component({
   components: { ProductCard },
 })
 export default class ProductList extends Vue {
   @products.State
-  products: any
+  products!: Product[]
+
+  @appState.State
+  content!: Content
 }
 </script>
 

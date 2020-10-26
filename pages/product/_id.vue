@@ -1,55 +1,43 @@
 <template>
-  <div class="product container d-flex pt-3">
-    <div class="product__image-wrapper">
-      <img
-        src="../../assets/images/bottle.png"
-        alt="bottle"
-        class="product__image"
-      />
-    </div>
-    <div>
-      <p class="product__description font-2 fs-18">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        exercitationem ullam sequi, cumque aliquid voluptate eos placeat fugiat
-        nemo, illo culpa animi. Totam pariatur veniam assumenda aut voluptas
-        quis veritatis maxime aliquam tempora reiciendis asperiores,
-        perspiciatis mollitia magnam unde officia. Illum itaque, tempora
-        doloribus ullam quasi tenetur, explicabo amet fugiat repellat culpa
-        perspiciatis officia. Minima eaque quidem amet error? Laborum est,
-        quaerat voluptas, nemo illum laboriosam perferendis, porro modi dolores
-        aliquid officiis reiciendis? Velit. Assumenda exercitationem ullam
-        sequi, cumque aliquid voluptate eos placeat fugiat nemo, illo culpa
-        animi. Totam pariatur veniam assumenda aut
-      </p>
-      <p class="product__description font-2 fs-18">
-        voluptas quis veritatis maxime aliquam tempora reiciendis asperiores,
-        perspiciatis mollitia magnam unde officia. Illum itaque, tempora
-        doloribus ullam quasi tenetur, explicabo amet fugiat repellat culpa
-        perspiciatis officia. Minima eaque quidem amet error? Laborum est,
-        quaerat voluptas, nemo illum laboriosam perferendis, porro modi dolores
-        aliquid officiis reiciendis? Veritatis reiciendis placeat nostrum rem,
-        culpa provident facere minima commodi praesentium id corporis sit
-        similique quia blanditiis nisi laudantium. Accusantium accusamus
-        quisquam expedita beatae neque vitae praesentium magnam voluptatem ipsam
-        iste nam, ab odit, assumenda omnis. Aut sapiente, neque, commodi
-        distinctio voluptatibus et consequuntur eveniet cupiditate dolorem
-        adipisci illum. Iusto vero eveniet repellendus nesciunt magni officia
-        veniam vitae consequatur molestiae, ab minus officiis dicta ipsam illo
-        adipisci corporis recusandae, minima doloremque modi quas fugiat sit
-        nisi distinctio.
-      </p>
+  <div class="product container pt-3">
+    <h2 class="font-2 text-center">{{ product.name }} `{{ product.year }}</h2>
+    <div class="d-flex align-start">
+      <div class="product__image-wrapper">
+        <img :src="product.image" alt="bottle" class="product__image" />
+      </div>
+      <div class="d-flex align-start">
+        <p class="product__description font-2 fs-18">
+          {{ product.text }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, namespace, Vue } from 'nuxt-property-decorator'
 import ProductList from '~/components/products/ProductList.vue'
+import { Product } from '~/models/Product'
+import { Content } from '~/models/Content'
+const products = namespace('products')
+const appState = namespace('appState')
 
 @Component({
   components: { ProductList },
 })
-export default class HomePage extends Vue {}
+export default class HomePage extends Vue {
+  @products.State
+  products!: Product[]
+
+  @appState.State
+  content!: Content
+
+  get product(): Product | null {
+    const id = +this.$route.params.id
+    const product = this.products.find((el) => el.id === id)
+    return product || null
+  }
+}
 </script>
 <style lang="scss">
 .product {

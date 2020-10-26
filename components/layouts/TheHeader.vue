@@ -35,14 +35,18 @@ const appState = namespace('appState')
 @Component
 export default class TheHeader extends Vue {
   @appState.Mutation
-  toggleNav
+  toggleNav!: boolean
+
+  @appState.Action
+  getContent!: (locale: string) => void
 
   @products.Action
   getProducts!: (locale: string) => void
 
-  handleLanguageChange(event: Event) {
-    const locale = event.target.value
+  handleLanguageChange(event: InputEvent) {
+    const locale = (event.target as HTMLSelectElement).value
     this.$router.push(this.switchLocalePath(locale))
+    this.getContent(locale)
     this.getProducts(locale)
   }
 }
@@ -60,6 +64,7 @@ export default class TheHeader extends Vue {
   background-color: $secondary;
 
   .menu-btn {
+    outline: none;
     flex: 1 0 33%;
   }
 

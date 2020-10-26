@@ -7,14 +7,14 @@
     </div>
     <nav class="mt-4">
       <ul class="list">
-        <li class="font-2 to-upper fs-16 font-weigth-bold">
-          <nuxt-link class="link" to="/products">Products</nuxt-link>
-        </li>
-        <li class="font-2 to-upper fs-16 font-weigth-bold mt-3">
-          <nuxt-link class="link" to="/">About Us</nuxt-link>
-        </li>
-        <li class="font-2 to-upper fs-16 font-weigth-bold mt-3">
-          <nuxt-link class="link" to="/">Galery</nuxt-link>
+        <li
+          v-for="item in content.nav"
+          :key="item.path"
+          class="font-2 to-upper fs-16 font-weigth-bold mb-3"
+        >
+          <nuxt-link class="link" :to="`/${item.path}`">
+            {{ item.name }}
+          </nuxt-link>
         </li>
       </ul>
     </nav>
@@ -23,6 +23,7 @@
 
 <script lang="ts">
 import { Component, Vue, Watch, namespace } from 'nuxt-property-decorator'
+import { Content } from '~/models/Content'
 const appState = namespace('appState')
 
 @Component
@@ -33,10 +34,13 @@ export default class TheMenu extends Vue {
   }
 
   @appState.State
-  showNav: boolean
+  showNav!: boolean
+
+  @appState.State
+  content!: Content
 
   @appState.Mutation
-  toggleNav
+  toggleNav!: () => void
 }
 </script>
 

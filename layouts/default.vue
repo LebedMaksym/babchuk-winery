@@ -12,7 +12,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, namespace } from 'nuxt-property-decorator'
-import TheMenu from '@/components/layouts/TheMenu'
+import TheMenu from '~/components/layouts/TheMenu.vue'
 const appState = namespace('appState')
 
 @Component({
@@ -20,10 +20,10 @@ const appState = namespace('appState')
 })
 export default class Default extends Vue {
   @appState.State
-  showNav: boolean
+  showNav!: boolean
 
   @appState.Mutation
-  toggleNav
+  toggleNav!: () => void
 }
 </script>
 <style lang="scss">
